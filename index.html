@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter</title>
+  <link rel="icon" href="Images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html"><h6>Home</h6></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><h6>Contact</h6></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><h6>About</h6></a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html"><h6>Services</h6></a></li>
+        </ul>
+      </div>
+
+      <a class="navbar-brand ms-auto" href="Images/favicon.png"></a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="d-flex align-items-center justify-content-center vh-100">
+    <div class="card shadow p-4" style="max-width: 400px; width: 100%;">
+      <h2 class="text-center mb-4">Dynamic Unit Converter</h2>
+
+      <!-- Dropdown to select conversion type -->
+      <div class="mb-3">
+        <label for="conversionType" class="form-label">Choose Conversion:</label>
+        <select id="conversionType" class="form-select">
+          <option value="kg-g">Kilograms → Grams</option>
+          <option value="g-kg">Grams → Kilograms</option>
+          <option value="m-cm">Meters → Centimeters</option>
+          <option value="cm-m">Centimeters → Meters</option>
+          <option value="km-m">Kilometers → Meters</option>
+          <option value="m-km">Meters → Kilometers</option>
+          <option value="inch-cm">Inches → Centimeters</option>
+          <option value="cm-inch">Centimeters → Inches</option>
+          <option value="ft-m">Feet → Meters</option>
+          <option value="m-ft">Meters → Feet</option>
+          <option value="mile-km">Miles → Kilometers</option>
+          <option value="km-mile">Kilometers → Miles</option>
+          <option value="kg-lb">Kilograms → Pounds</option>
+          <option value="lb-kg">Pounds → Kilograms</option>
+          <option value="oz-g">Ounces → Grams</option>
+          <option value="g-oz">Grams → Ounces</option>
+          <option value="l-ml">Liters → Milliliters</option>
+          <option value="ml-l">Milliliters → Liters</option>
+          <option value="l-gal">Liters → Gallons (US)</option>
+          <option value="gal-l">Gallons (US) → Liters</option>
+          <option value="c-f">Celsius → Fahrenheit</option>
+          <option value="f-c">Fahrenheit → Celsius</option>
+          <option value="c-k">Celsius → Kelvin</option>
+          <option value="k-c">Kelvin → Celsius</option>
+          <option value="mps-kph">Meters/second → Kilometers/hour</option>
+          <option value="kph-mps">Kilometers/hour → Meters/second</option>
+          <option value="mph-kph">Miles/hour → Kilometers/hour</option>
+          <option value="kph-mph">Kilometers/hour → Miles/hour</option>
+          <option value="s-min">Seconds → Minutes</option>
+          <option value="min-s">Minutes → Seconds</option>
+          <option value="hr-min">Hours → Minutes</option>
+          <option value="min-hr">Minutes → Hours</option>
+          <option value="hr-s">Hours → Seconds</option>
+          <option value="j-cal">Joules → Calories</option>
+          <option value="cal-j">Calories → Joules</option>
+          <option value="w-kw">Watts → Kilowatts</option>
+          <option value="kw-w">Kilowatts → Watts</option>
+          <option value="b-kb">Bytes → Kilobytes</option>
+          <option value="kb-mb">Kilobytes → Megabytes</option>
+          <option value="mb-gb">Megabytes → Gigabytes</option>
+          <option value="gb-tb">Gigabytes → Terabytes</option>
+        </select>
+      </div>
+
+      <!-- Form -->
+      <form id="converterForm">
+        <div class="mb-3">
+          <label id="fromLabel" for="fromValue" class="form-label">Kilograms:</label>
+          <input type="number" id="fromValue" class="form-control" placeholder="Enter value">
+        </div>
+
+        <div class="mb-3">
+          <label id="toLabel" class="form-label">Grams:</label>
+          <input type="text" id="toValue" class="form-control" readonly>
+        </div>
+
+        <button type="button" id="convertBtn" class="btn btn-primary w-100">Convert</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
