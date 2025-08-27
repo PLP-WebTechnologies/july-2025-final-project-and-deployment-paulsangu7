@@ -50,3 +50,46 @@ button {
 button:hover {
   background: #0056b3;
 }
+
+/* Footer container */
+footer.container-fluid1 {
+  background: #222;          /* rangi ya nyuma */
+  color: #fff;               /* maandishi meupe */
+  text-align: center;        /* content katikati */
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+/* Copyright text */
+footer.container-fluid1 div:first-child {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Social media list */
+footer.container-fluid1 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;             /* panga icons mlalo */
+  justify-content: center;   /* ziwe katikati */
+  gap: 15px;                 /* nafasi kati ya icons */
+}
+
+/* Social media links */
+footer.container-fluid1 ul li a img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* icons zionekane nyeupe */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+footer.container-fluid1 ul li a img:hover {
+  transform: scale(1.2);        /* zikue kidogo uki-hover */
+  filter: brightness(0) invert(0.6) sepia(1) hue-rotate(190deg) saturate(200%);
+}
+
+main.container {
+  margin-top: 80;       /* Ongeza content kuanza juu kabisa */
+  padding-top: 0;      /* Ondoa padding ya juu */
+}
